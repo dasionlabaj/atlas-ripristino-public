@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "revisione": "pubblica-0001",
+  "data": "2026-10-28",
+  "identita": {
+    "progettoId": "atlas",
+    "supportoId": "atlas-ripristino",
+    "nome": "Atlas Ripristino",
+    "funzione": "Base pubblica documentale per ritrovare identità progettuale, stato e metodo di continuità",
+    "nomeConcettualeProvvisorio": "Atlas token di ripristino",
+    "confine": "Nessun singolo file o computer rappresenta tutto Atlas; nessuna credenziale incorporata"
+  },
+  "stato": {
+    "tipo": "Sintesi pubblica da documenti locali e verifiche documentali precedenti",
+    "recuperoStorico": {
+      "fileVerificati": 23579,
+      "byteVerificati": 5091107186,
+      "erroriResiduiNeiManifesti": 0,
+      "fileInventarioComplessivo": 31876,
+      "dataRapporti": "2026-10-28",
+      "proveIntegraliPubbliche": false,
+      "softwareTestatoFunzionalmente": false,
+      "nota": "Dati del recupero storico, non benchmark di Atlas né nuova verifica del payload"
+    },
+    "supporto": "Base locale creata; replica documentale privata r0002 pubblicata e riletta su GitHub e Drive",
+    "cifraturaDrive": "Archivio già caricato senza cifratura aggiuntiva lato client; nuova richiesta di cifratura in attesa di custodia e recupero della chiave",
+    "distribuzioneImplementata": false,
+    "sincronizzazioneAutomatica": false,
+    "ripristinoCompletoDisponibile": false
+  },
+  "ruoliLogici": [
+    {"id": "custodia-locale", "ruolo": "Fonti, stato storico e materiali privati", "destinazione": "Non pubblicata"},
+    {"id": "replica-documentale-privata", "ruolo": "Continuità manuale privata", "destinazione": "Non pubblicata"},
+    {"id": "replica-documentale-drive", "ruolo": "Archivio documentale privato verificato", "destinazione": "Non pubblicata"},
+    {"id": "base-pubblica", "ruolo": "Descrizione minimizzata, leggibile e non cifrata del progetto e del processo", "destinazione": "Questo repository"}
+  ],
+  "provenienza": {
+    "metodo": "Nuova sintesi selettiva; nessuna copia del corpus, degli inventari personali o della storia Git privata",
+    "fontiLogiche": ["Decisioni esplicite del titolare", "Rapporti locali finalizzati del recupero", "Manifesto locale di continuità", "Registro locale delle repliche e verifiche"],
+    "limite": "Il lettore pubblico verifica questa base e la sua cronologia; le prove private esterne non sono ricostruibili dalla sola sintesi"
+  },
+  "decisioni": [
+    "Creare una nuova base pubblica separata, leggibile e non cifrata",
+    "Mantenere privati materiali dei nodi e repository preesistente",
+    "Aggiornare manualmente, preservando storia, provenienza e divergenze",
+    "Non aggiungere automaticamente una licenza del codice"
+  ],
+  "ipotesi": ["Identità stabile e mappa dei componenti possono favorire continuità tra nodi", "Architettura distribuita e ruoli operativi ancora da progettare"],
+  "lacune": ["Significato operativo di dove risiede Atlas da concordare", "Base software da scegliere e collaudare", "Nessuna prova di ripristino completo o coordinamento distribuito", "Custodia e recupero della chiave privata di cifratura da concordare"],
+  "regoleVersione": {
+    "aggiornamento": "Manuale",
+    "autorita": "Revisione accettata con decisione registrata, contenuto e provenienza; non il solo timestamp",
+    "conflitto": "Stessa revisione con hash diversi: conservare entrambe, confrontare e registrare una nuova decisione",
+    "verificaPubblicazione": "Esito attestato separatamente dopo rilettura remota"
+  },
+  "prossimoPasso": "Produrre una scheda condivisa di identità, stato, ruoli logici e regola di revisione prima di ampliare l’implementazione",
+  "licenza": "Da decidere"
+}
